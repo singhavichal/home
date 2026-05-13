@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Avichal Singh resume homepage - software engineer, cloud, DevOps, backend development." />
-  <title>Avichal Singh</title>
+  <title>Avichal Singh | Resume</title>
   <style>
     :root {
       --text: #1f2937;
@@ -110,5 +110,199 @@
     .cert-list {
       columns: 2;
       column-gap: 24px;
-      padding-left:*
-
+      padding-left: 20px;
+    }
+
+    .project-link,
+    .resume-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .project-link:hover,
+    .resume-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .skills-list,
+      .cert-list {
+        columns: 1;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .container {
+        padding: 24px 16px 40px;
+      }
+
+      section {
+        padding: 16px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      section {
+        border: none;
+        background: #fff;
+        padding: 0;
+        margin-bottom: 18px;
+      }
+
+      header {
+        margin-bottom: 18px;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Avichal Singh</h1>
+      <p class="headline">Software Engineer | Backend Development | Cloud | DevOps</p>
+      <div class="contact">
+        <span>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></span>
+        <span>GitHub: <a href="https://github.com/avichal-singh_hpeprod" target="_blank">github.com/avichal-singh_hpeprod</a></span>
+        <span>LinkedIn: <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a></span>
+        <span>Location: Your City, Country</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Results-oriented software engineer with experience in backend development, cloud platforms,
+        automation, and DevOps practices. Skilled in building reliable applications, improving CI/CD
+        workflows, and working across the software development lifecycle. Strong interest in scalable
+        systems, infrastructure automation, and efficient engineering practices.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Programming: Java, Python, JavaScript</li>
+        <li>Cloud: AWS, Azure, Google Cloud</li>
+        <li>DevOps: GitHub Actions, Jenkins, CI/CD, Docker, Kubernetes</li>
+        <li>Backend: REST APIs, Microservices, Spring Boot</li>
+        <li>Tools: Git, Linux, Bash, VS Code</li>
+        <li>Databases: MySQL, PostgreSQL, MongoDB</li>
+        <li>Testing: Unit Testing, Integration Testing</li>
+        <li>Practices: Agile, Debugging, Automation, Monitoring</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <article>
+        <h3>Software Engineer — Company Name</h3>
+        <p class="subtext">Month Year - Present | Location</p>
+        <ul>
+          <li>Developed and maintained backend services and internal tools to support business and engineering workflows.</li>
+          <li>Improved automation and CI/CD pipelines to reduce deployment effort and increase release reliability.</li>
+          <li>Collaborated with cross-functional teams to troubleshoot production issues and improve system performance.</li>
+          <li>Contributed to cloud-based solutions using modern DevOps and infrastructure practices.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Previous Role — Previous Company</h3>
+        <p class="subtext">Month Year - Month Year | Location</p>
+        <ul>
+          <li>Built and supported application features based on business and customer requirements.</li>
+          <li>Participated in code reviews, testing, and release processes to improve software quality.</li>
+          <li>Worked with engineers and stakeholders to deliver enhancements and bug fixes on schedule.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Project Name 1</h3>
+        <p>
+          Short description of the project, the problem it solves, and the technologies used.
+          Example: Built a cloud-native service for automated log processing using Python, Docker, and AWS.
+        </p>
+        <p>
+          GitHub:
+          <a class="project-link" href="https://github.com/avichal-singh_hpeprod/project-name-1" target="_blank">
+            github.com/avichal-singh_hpeprod/project-name-1
+          </a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Project Name 2</h3>
+        <p>
+          Short description of the project, measurable outcomes if possible, and the technical stack used.
+        </p>
+        <p>
+          GitHub:
+          <a class="project-link" href="https://github.com/avichal-singh_hpeprod/project-name-2" target="_blank">
+            github.com/avichal-singh_hpeprod/project-name-2
+          </a>
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <article>
+        <h3>Your Degree</h3>
+        <p class="subtext">University Name | Graduation Year</p>
+        <p>Relevant coursework: Data Structures, Algorithms, Operating Systems, Databases, Cloud Computing.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>Azure Fundamentals</li>
+        <li>Google Cloud Digital Leader</li>
+        <li>Any other relevant certification</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Additional Information</h2>
+      <ul>
+        <li>Open source contributions: Add links or short notes if available.</li>
+        <li>Languages: English, Hindi, etc.</li>
+        <li>Interests: Cloud engineering, backend systems, developer productivity, automation.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Last updated: May 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
