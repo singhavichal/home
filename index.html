@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Avichal Singh resume homepage - software engineer, cloud, DevOps, backend development." />
-  <title>Avichal Singh | Resume</title>
+  <meta name="description" content="Avichal Singh - Automation Designer/Architect specializing in RPA and Intelligent Automation." />
+  <title>Avichal Singh</title>
   <style>
     :root {
       --text: #1f2937;
       --muted: #4b5563;
       --heading: #111827;
       --accent: #2563eb;
+      --accent-dark: #1d4ed8;
       --border: #e5e7eb;
       --bg: #ffffff;
       --section-bg: #f9fafb;
@@ -29,15 +30,35 @@
     }
 
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 32px 20px 48px;
     }
 
     header {
       border-bottom: 2px solid var(--border);
-      padding-bottom: 20px;
+      padding-bottom: 24px;
       margin-bottom: 28px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+    }
+
+    .header-info {
+      flex: 1;
+      min-width: 260px;
     }
 
     h1 {
@@ -47,25 +68,50 @@
     }
 
     .headline {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       color: var(--muted);
       margin-bottom: 12px;
+      font-weight: 600;
     }
 
     .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px 18px;
+      gap: 10px 18px;
       font-size: 0.95rem;
+      margin-bottom: 14px;
     }
 
     .contact a {
       color: var(--accent);
       text-decoration: none;
+      word-break: break-word;
     }
 
     .contact a:hover {
       text-decoration: underline;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
     }
 
     section {
@@ -95,6 +141,7 @@
       color: var(--muted);
       font-size: 0.95rem;
       margin-bottom: 8px;
+      font-weight: 600;
     }
 
     ul {
@@ -107,21 +154,11 @@
     }
 
     .skills-list,
-    .cert-list {
+    .cert-list,
+    .hobby-list {
       columns: 2;
       column-gap: 24px;
       padding-left: 20px;
-    }
-
-    .project-link,
-    .resume-link {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .project-link:hover,
-    .resume-link:hover {
-      text-decoration: underline;
     }
 
     footer {
@@ -133,7 +170,8 @@
 
     @media (max-width: 700px) {
       .skills-list,
-      .cert-list {
+      .cert-list,
+      .hobby-list {
         columns: 1;
       }
 
@@ -148,12 +186,26 @@
       section {
         padding: 16px;
       }
+
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
     }
 
     @media print {
       body {
         background: #fff;
         color: #000;
+      }
+
+      .button-row {
+        display: none;
       }
 
       section {
@@ -182,121 +234,105 @@
 <body>
   <main class="container">
     <header>
-      <h1>Avichal Singh</h1>
-      <p class="headline">Software Engineer | Backend Development | Cloud | DevOps</p>
-      <div class="contact">
-        <span>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></span>
-        <span>GitHub: <a href="https://github.com/avichal-singh_hpeprod" target="_blank">github.com/avichal-singh_hpeprod</a></span>
-        <span>LinkedIn: <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a></span>
-        <span>Location: Your City, Country</span>
+      <div class="header-top">
+        <img src="profile.jpg" alt="Profile picture of Avichal Singh" class="profile-pic" />
+        <div class="header-info">
+          <h1>AVICHAL SINGH</h1>
+          <p class="headline">Automation Designer/Architect | RPA &amp; Intelligent Automation</p>
+
+          <div class="contact">
+            <span>Phone: <a href="tel:+919637689947">+91 96 3768 9947</a></span>
+            <span>Email: <a href="mailto:AvichalSingh.IITk@gmail.com">AvichalSingh.IITk@gmail.com</a></span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/avichalsinghiitk" target="_blank">linkedin.com/in/avichalsinghiitk</a></span>
+          </div>
+
+          <div class="button-row">
+            <a class="button" href="Avichal_Singh_Resume.pdf" target="_blank">Download PDF Resume</a>
+          </div>
+        </div>
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <p>
-        Results-oriented software engineer with experience in backend development, cloud platforms,
-        automation, and DevOps practices. Skilled in building reliable applications, improving CI/CD
-        workflows, and working across the software development lifecycle. Strong interest in scalable
-        systems, infrastructure automation, and efficient engineering practices.
+        Automation Designer/Architect with 8.5 years of experience delivering enterprise-scale RPA and intelligent
+        automation solutions for global organizations. Proven expertise in Power Automate, n8n flow, boomi,
+        WorkFusion RPA, MS AI Builder, and Java-based automation frameworks, with strong ownership of automation
+        lifecycle from feasibility assessment to production deployment. Demonstrated success in driving large-scale
+        operational efficiency (40+ FTE savings) across regulated industries. Adept at stakeholder management,
+        ROI-driven automation strategy, and scalable solution delivery.
       </p>
     </section>
 
     <section>
-      <h2>Technical Skills</h2>
+      <h2>Skills</h2>
       <ul class="skills-list">
-        <li>Programming: Java, Python, JavaScript</li>
-        <li>Cloud: AWS, Azure, Google Cloud</li>
-        <li>DevOps: GitHub Actions, Jenkins, CI/CD, Docker, Kubernetes</li>
-        <li>Backend: REST APIs, Microservices, Spring Boot</li>
-        <li>Tools: Git, Linux, Bash, VS Code</li>
-        <li>Databases: MySQL, PostgreSQL, MongoDB</li>
-        <li>Testing: Unit Testing, Integration Testing</li>
-        <li>Practices: Agile, Debugging, Automation, Monitoring</li>
+        <li>n8n flow</li>
+        <li>Boomi workflow automation</li>
+        <li>Intelligent Automation</li>
+        <li>RPA Solution Design</li>
+        <li>Microsoft Power Automate</li>
+        <li>AI Builder</li>
+        <li>WorkFusion (RPA &amp; ML)</li>
+        <li>Java (Enterprise Applications)</li>
+        <li>Workflow Orchestration</li>
+        <li>API &amp; System Integration</li>
+        <li>Automation Feasibility &amp; ROI Analysis</li>
+        <li>Enterprise Automation Frameworks</li>
+        <li>TOGAF Enterprise Architecture</li>
+        <li>AWS (Foundational)</li>
+        <li>Agentic AI-driven automation (n8n, boomi)</li>
       </ul>
     </section>
 
     <section>
-      <h2>Professional Experience</h2>
+      <h2>Work Experience</h2>
 
       <article>
-        <h3>Software Engineer — Company Name</h3>
-        <p class="subtext">Month Year - Present | Location</p>
+        <h3>Software Designer III — Hewlett-Packard Enterprise</h3>
+        <p class="subtext">Bengaluru | Aug 2021 – Present</p>
         <ul>
-          <li>Developed and maintained backend services and internal tools to support business and engineering workflows.</li>
-          <li>Improved automation and CI/CD pipelines to reduce deployment effort and increase release reliability.</li>
-          <li>Collaborated with cross-functional teams to troubleshoot production issues and improve system performance.</li>
-          <li>Contributed to cloud-based solutions using modern DevOps and infrastructure practices.</li>
+          <li>Architected end-to-end enterprise automation and digital solutions using Power Platform and WorkFusion RPA tool, based ODF framework Java-based systems.</li>
+          <li>Conducted solution feasibility studies, initial benefit estimates, defined architecture blueprints, and ensured alignment with enterprise architecture board.</li>
+          <li>Played a key role in delivering solutions that generated significant operational cost savings and scalability improvements, and enhanced code quality through reviews.</li>
+          <li>Collaborated with cross-functional global teams to integrate automation into broader enterprise ecosystems.</li>
         </ul>
       </article>
 
       <article>
-        <h3>Previous Role — Previous Company</h3>
-        <p class="subtext">Month Year - Month Year | Location</p>
+        <h3>Team Lead — Capgemini</h3>
+        <p class="subtext">Pune | Aug 2017 – Jul 2021</p>
         <ul>
-          <li>Built and supported application features based on business and customer requirements.</li>
-          <li>Participated in code reviews, testing, and release processes to improve software quality.</li>
-          <li>Worked with engineers and stakeholders to deliver enhancements and bug fixes on schedule.</li>
+          <li>Designed and led delivery of enterprise automation solutions for BFSI clients with high compliance requirements.</li>
+          <li>Acted as technical owner for solution design, code quality, and architecture decisions.</li>
+          <li>Supported feasibility and requirement discussions with client stakeholders.</li>
         </ul>
       </article>
     </section>
 
     <section>
-      <h2>Projects</h2>
-
+      <h2>Education &amp; Certifications</h2>
       <article>
-        <h3>Project Name 1</h3>
-        <p>
-          Short description of the project, the problem it solves, and the technologies used.
-          Example: Built a cloud-native service for automated log processing using Python, Docker, and AWS.
-        </p>
-        <p>
-          GitHub:
-          <a class="project-link" href="https://github.com/avichal-singh_hpeprod/project-name-1" target="_blank">
-            github.com/avichal-singh_hpeprod/project-name-1
-          </a>
-        </p>
+        <h3>B. Tech</h3>
+        <p class="subtext">Indian Institute of Technology (IIT Kanpur) | May 2017</p>
       </article>
 
-      <article>
-        <h3>Project Name 2</h3>
-        <p>
-          Short description of the project, measurable outcomes if possible, and the technical stack used.
-        </p>
-        <p>
-          GitHub:
-          <a class="project-link" href="https://github.com/avichal-singh_hpeprod/project-name-2" target="_blank">
-            github.com/avichal-singh_hpeprod/project-name-2
-          </a>
-        </p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <article>
-        <h3>Your Degree</h3>
-        <p class="subtext">University Name | Graduation Year</p>
-        <p>Relevant coursework: Data Structures, Algorithms, Operating Systems, Databases, Cloud Computing.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
       <ul class="cert-list">
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>Azure Fundamentals</li>
-        <li>Google Cloud Digital Leader</li>
-        <li>Any other relevant certification</li>
+        <li>TOGAF Enterprise Architecture Foundation</li>
+        <li>Oracle Java Programmer</li>
+        <li>WorkFusion ML Engineer</li>
+        <li>WorkFusion RPA Developer</li>
       </ul>
     </section>
 
     <section>
-      <h2>Additional Information</h2>
-      <ul>
-        <li>Open source contributions: Add links or short notes if available.</li>
-        <li>Languages: English, Hindi, etc.</li>
-        <li>Interests: Cloud engineering, backend systems, developer productivity, automation.</li>
+      <h2>Hobbies</h2>
+      <ul class="hobby-list">
+        <li>Reading about new technology and AI trends</li>
+        <li>Automation experimentation and workflow design</li>
+        <li>Problem solving and architecture thinking</li>
+        <li>Travel and exploring new places</li>
       </ul>
     </section>
 
