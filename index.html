@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Avichal Singh - Automation Designer/Architect specializing in RPA and Intelligent Automation." />
+  <meta name="description" content="Avichal Singh - Software Architect & AI Engineer specializing in AgenticAI, Intelligent Automation, and RPA." />
   <title>Avichal Singh</title>
   <style>
     :root {
@@ -12,14 +12,15 @@
       --heading: #111827;
       --accent: #2563eb;
       --accent-dark: #1d4ed8;
+      --accent-light: #eff6ff;
       --border: #e5e7eb;
       --bg: #ffffff;
       --section-bg: #f9fafb;
+      --tag-bg: #dbeafe;
+      --tag-text: #1e40af;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -56,10 +57,7 @@
       border: 3px solid var(--border);
     }
 
-    .header-info {
-      flex: 1;
-      min-width: 260px;
-    }
+    .header-info { flex: 1; min-width: 260px; }
 
     h1 {
       margin: 0 0 8px;
@@ -88,9 +86,7 @@
       word-break: break-word;
     }
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
+    .contact a:hover { text-decoration: underline; }
 
     .button-row {
       display: flex;
@@ -110,9 +106,7 @@
       font-weight: 600;
     }
 
-    .button:hover {
-      background: var(--accent-dark);
-    }
+    .button:hover { background: var(--accent-dark); }
 
     section {
       margin-bottom: 24px;
@@ -132,26 +126,45 @@
     }
 
     h3 {
-      margin: 0 0 6px;
+      margin: 0 0 4px;
       font-size: 1.05rem;
       color: var(--heading);
     }
 
     .subtext {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       margin-bottom: 8px;
       font-weight: 600;
     }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .duration-badge {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    article { margin-bottom: 20px; }
+    article:last-child { margin-bottom: 0; }
 
     ul {
       margin: 8px 0 0 20px;
       padding: 0;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
+    li { margin-bottom: 8px; }
 
     .skills-list,
     .cert-list,
@@ -159,6 +172,52 @@
       columns: 2;
       column-gap: 24px;
       padding-left: 20px;
+    }
+
+    /* Tech tag pills for key technologies */
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+
+    /* Highlight box for notable projects */
+    .project-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .project-box strong {
+      display: block;
+      color: var(--accent-dark);
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .location-note {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
     }
 
     footer {
@@ -171,63 +230,24 @@
     @media (max-width: 700px) {
       .skills-list,
       .cert-list,
-      .hobby-list {
-        columns: 1;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-
-      .container {
-        padding: 24px 16px 40px;
-      }
-
-      section {
-        padding: 16px;
-      }
-
-      .header-top {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-      }
+      .hobby-list { columns: 1; }
+      h1 { font-size: 1.7rem; }
+      .container { padding: 24px 16px 40px; }
+      section { padding: 16px; }
+      .header-top { flex-direction: column; align-items: flex-start; }
+      .profile-pic { width: 120px; height: 120px; }
+      .job-header { flex-direction: column; }
     }
 
     @media print {
-      body {
-        background: #fff;
-        color: #000;
-      }
-
-      .button-row {
-        display: none;
-      }
-
-      section {
-        border: none;
-        background: #fff;
-        padding: 0;
-        margin-bottom: 18px;
-      }
-
-      header {
-        margin-bottom: 18px;
-      }
-
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-
-      .container {
-        max-width: 100%;
-        padding: 0;
-      }
+      body { background: #fff; color: #000; }
+      .button-row { display: none; }
+      section { border: none; background: #fff; padding: 0; margin-bottom: 18px; }
+      header { margin-bottom: 18px; }
+      a { color: #000; text-decoration: none; }
+      .container { max-width: 100%; padding: 0; }
+      .project-box { border-left: 3px solid #000; background: #f5f5f5; }
+      .tag, .duration-badge, .location-note { background: #eee; color: #000; }
     }
   </style>
 </head>
@@ -238,106 +258,194 @@
         <img src="profile.jpg" alt="Profile picture of Avichal Singh" class="profile-pic" />
         <div class="header-info">
           <h1>AVICHAL SINGH</h1>
-          <p class="headline">Automation Designer/Architect | RPA &amp; Intelligent Automation</p>
+          <p class="headline">
+            Software Architect &amp; AI Engineer | Agentic AI · Intelligent Automation · RPA
+            <!--<span class="location-note">Open to UAE &amp; India</span>-->
+          </p>
 
           <div class="contact">
-            <span>Phone: <a href="tel:+919637689947">+91 96 3768 9947</a></span>
-            <span>Email: <a href="mailto:AvichalSingh.IITk@gmail.com">AvichalSingh.IITk@gmail.com</a></span>
-            <span>LinkedIn: <a href="https://www.linkedin.com/in/avichalsinghiitk" target="_blank">linkedin.com/in/avichalsinghiitk</a></span>
+            <span>📞 <a href="tel:+919637689947">+91 96 3768 9947</a></span>
+            <span>✉️ <a href="mailto:AvichalSingh.IITk@gmail.com">AvichalSingh.IITk@gmail.com</a></span>
+            <span>🔗 <a href="https://www.linkedin.com/in/avichalsinghiitk" target="_blank">linkedin.com/in/avichalsinghiitk</a></span>
           </div>
 
           <div class="button-row">
-            <a class="button" href="Avichal_Singh_Resume.pdf" target="_blank">Download PDF Resume</a>
+            <a class="button" href="Avichal_Singh_Resume.pdf" target="_blank">⬇ Download PDF Resume</a>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- PROFESSIONAL SUMMARY -->
     <section>
       <h2>Professional Summary</h2>
       <p>
-        Automation Designer/Architect with 8.5 years of experience delivering enterprise-scale RPA and intelligent
-        automation solutions for global organizations. Proven expertise in Power Automate, n8n flow, boomi,
-        WorkFusion RPA, MS AI Builder, and Java-based automation frameworks, with strong ownership of automation
-        lifecycle from feasibility assessment to production deployment. Demonstrated success in driving large-scale
-        operational efficiency (40+ FTE savings) across regulated industries. Adept at stakeholder management,
-        ROI-driven automation strategy, and scalable solution delivery.
+        Software Architect &amp; AI Engineer with <strong>9 years of experience</strong> delivering enterprise-scale
+        RPA, intelligent automation, and production-grade AI solutions for global organizations. Currently leading
+        AI application deployments and platform migrations on <strong>HPE's OneAI platform</strong> — migrating
+        enterprise AI workloads from the Ezmeral platform to the next-generation
+        <strong>HPE Private Cloud AI (PCAI)</strong> platform co-developed with NVIDIA. Hands-on expertise
+        spanning full-stack AI development (FastAPI, Vite microfrontend), agentic AI frameworks, container
+        orchestration (Docker, Kubernetes), and AI-assisted development with GitHub Copilot and Claude Sonnet.
+        Proven track record in driving <strong>40+ FTE savings</strong>, ROI-driven automation strategy, and
+        scalable solution delivery across regulated industries.
+        Actively seeking opportunities in <strong>UAE or India</strong>.
       </p>
     </section>
 
+    <!-- SKILLS -->
     <section>
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li>n8n flow</li>
-        <li>Boomi workflow automation</li>
-        <li>Intelligent Automation</li>
-        <li>RPA Solution Design</li>
-        <li>Microsoft Power Automate</li>
-        <li>AI Builder</li>
-        <li>WorkFusion (RPA &amp; ML)</li>
+        <li>Agentic AI &amp; Multi-Agent Systems</li>
+        <li>FastAPI (Python Backend)</li>
+        <li>Microfrontend (Vite Framework)</li>
+        <li>Docker &amp; Kubernetes (K8s)</li>
+        <li>GitHub Copilot &amp; Claude Sonnet</li>
+        <li>AI Application Deployment</li>
+        <li>n8n Workflow Automation</li>
+        <li>Boomi Integration Platform</li>
+        <li>Microsoft Power Automate &amp; AI Builder</li>
+        <li>WorkFusion RPA &amp; ML</li>
+        <li>JSON-RPC Agent Communication</li>
+        <li>Hermes Agent Streaming</li>
         <li>Java (Enterprise Applications)</li>
-        <li>Workflow Orchestration</li>
         <li>API &amp; System Integration</li>
         <li>Automation Feasibility &amp; ROI Analysis</li>
-        <li>Enterprise Automation Frameworks</li>
         <li>TOGAF Enterprise Architecture</li>
         <li>AWS (Foundational)</li>
-        <li>Agentic AI-driven automation (n8n, boomi)</li>
+        <li>Intelligent Automation Frameworks</li>
       </ul>
     </section>
 
+    <!-- WORK EXPERIENCE -->
     <section>
       <h2>Work Experience</h2>
 
       <article>
-        <h3>Software Designer III — Hewlett-Packard Enterprise</h3>
-        <p class="subtext">Bengaluru | Aug 2021 – Present</p>
+        <div class="job-header">
+          <div>
+            <h3>Software Designer III — Hewlett Packard Enterprise</h3>
+            <p class="subtext">Bengaluru, India</p>
+          </div>
+          <span class="duration-badge">Aug 2021 – Present · ~5 yrs</span>
+        </div>
+
         <ul>
-          <li>Architected end-to-end enterprise automation and digital solutions using Power Platform and WorkFusion RPA tool, based ODF framework Java-based systems.</li>
-          <li>Conducted solution feasibility studies, initial benefit estimates, defined architecture blueprints, and ensured alignment with enterprise architecture board.</li>
-          <li>Played a key role in delivering solutions that generated significant operational cost savings and scalability improvements, and enhanced code quality through reviews.</li>
-          <li>Collaborated with cross-functional global teams to integrate automation into broader enterprise ecosystems.</li>
+          <li>
+            Leading <strong>AI application deployment and platform migration</strong> of HPE's OneAI platform
+            workloads from the legacy Ezmeral environment to the next-generation
+            <strong>HPE Private Cloud AI (PCAI)</strong> platform — a joint solution developed by HPE and NVIDIA
+            — enabling enterprise-grade generative and agentic AI at scale.
+          </li>
+          <li>
+            Developing full-stack AI application components including <strong>FastAPI-based backends</strong> and
+            <strong>microfrontend UIs using the Vite framework</strong>; containerizing and deploying solutions
+            via <strong>Docker and Kubernetes (K8s)</strong>.
+          </li>
+          <li>
+            Accelerating development velocity and code quality through <strong>AI-assisted coding</strong> with
+            GitHub Copilot and Claude Sonnet (Anthropic).
+          </li>
+          <li>
+            Architected and delivered enterprise automation solutions using <strong>Power Platform,
+            WorkFusion RPA</strong>, and Java-based ODF frameworks; conducted feasibility studies,
+            defined architecture blueprints, and ensured alignment with Enterprise Architecture Board.
+          </li>
+          <li>
+            Collaborated with cross-functional global teams to integrate automation into broader
+            enterprise ecosystems, driving significant operational cost savings and scalability improvements.
+          </li>
         </ul>
+
+        <!-- AgentHub Highlight -->
+        <div class="project-box">
+          <strong>🤖 Featured Project: AgentHub — Agentic AI Platform</strong>
+          Designed and built <strong>AgentHub</strong>, an internal multi-agent platform hosting specialized
+          AI agents including:
+          <ul style="margin-top:8px;">
+            <li><strong>Jira Agent</strong> — automated issue tracking and sprint management</li>
+            <li><strong>GitHub Agent</strong> — repository insights and PR automation</li>
+            <li><strong>Salesforce (SFDC) Case Summarizing Agent</strong> — intelligent case triage and summarization</li>
+            <li><strong>Scheduling Agent</strong> — intelligent meeting and resource scheduling</li>
+            <li><strong>GCM Agent</strong> — Google Cloud Messaging workflow automation</li>
+          </ul>
+          <ul style="margin-top:8px;">
+            <li>Implemented <strong>JSON-RPC based agent-to-agent communication</strong> protocol for structured inter-agent messaging</li>
+            <li>Integrated <strong>Hermes Agent Streaming</strong> for real-time agent response delivery</li>
+            <li>Built on PCAI infrastructure using FastAPI, Vite microfrontend, Docker, and Kubernetes</li>
+          </ul>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Vite Microfrontend</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">HPE PCAI</span>
+          <span class="tag">Agentic AI</span>
+          <span class="tag">JSON-RPC</span>
+          <span class="tag">Hermes Streaming</span>
+          <span class="tag">GitHub Copilot</span>
+          <span class="tag">Claude Sonnet</span>
+          <span class="tag">Power Automate</span>
+          <span class="tag">WorkFusion RPA</span>
+        </div>
       </article>
 
       <article>
-        <h3>Team Lead — Capgemini</h3>
-        <p class="subtext">Pune | Aug 2017 – Jul 2021</p>
+        <div class="job-header">
+          <div>
+            <h3>Team Lead — Capgemini</h3>
+            <p class="subtext">Pune, India</p>
+          </div>
+          <span class="duration-badge">Aug 2017 – Jul 2021 · 4 yrs</span>
+        </div>
         <ul>
-          <li>Designed and led delivery of enterprise automation solutions for BFSI clients with high compliance requirements.</li>
-          <li>Acted as technical owner for solution design, code quality, and architecture decisions.</li>
-          <li>Supported feasibility and requirement discussions with client stakeholders.</li>
+          <li>Designed and led delivery of enterprise automation solutions for <strong>BFSI clients</strong> with high compliance and regulatory requirements.</li>
+          <li>Acted as technical owner for solution design, code quality, and architecture decisions across multiple parallel engagements.</li>
+          <li>Supported feasibility assessments and requirement workshops with senior client stakeholders; contributed to pre-sales and solutioning.</li>
+          <li>Delivered measurable operational efficiency gains including <strong>40+ FTE savings</strong> across automation programs.</li>
         </ul>
+        <div class="tech-tags">
+          <span class="tag">RPA</span>
+          <span class="tag">WorkFusion</span>
+          <span class="tag">Java</span>
+          <span class="tag">BFSI Automation</span>
+          <span class="tag">Solution Architecture</span>
+        </div>
       </article>
     </section>
 
+    <!-- EDUCATION & CERTIFICATIONS -->
     <section>
       <h2>Education &amp; Certifications</h2>
       <article>
-        <h3>B. Tech</h3>
-        <p class="subtext">Indian Institute of Technology (IIT Kanpur) | May 2017</p>
+        <h3>B.Tech — Indian Institute of Technology, Kanpur (IIT Kanpur)</h3>
+        <p class="subtext">Graduated: May 2017</p>
       </article>
 
       <ul class="cert-list">
         <li>TOGAF Enterprise Architecture Foundation</li>
-        <li>Oracle Java Programmer</li>
+        <li>Oracle Certified Java Programmer</li>
         <li>WorkFusion ML Engineer</li>
         <li>WorkFusion RPA Developer</li>
       </ul>
     </section>
 
+    <!-- HOBBIES -->
     <section>
-      <h2>Hobbies</h2>
+      <h2>Interests</h2>
       <ul class="hobby-list">
-        <li>Reading about new technology and AI trends</li>
+        <li>Exploring AI/LLM trends and agentic frameworks</li>
         <li>Automation experimentation and workflow design</li>
-        <li>Problem solving and architecture thinking</li>
-        <li>Travel and exploring new places</li>
+        <li>Solution architecture and system thinking</li>
+        <li>Travel and experiencing new cultures</li>
       </ul>
     </section>
 
     <footer>
-      <p>Last updated: May 2026</p>
+      <p>Last updated: July 2026 &nbsp;|&nbsp; Open to opportunities in <strong>UAE</strong> and <strong>India</strong></p>
     </footer>
   </main>
 </body>
